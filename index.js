@@ -21,8 +21,8 @@ const snake_part_w = 10;
 
 function drawBackground() {
   // Draw background
-  snakeboard_ctx.fillRect(0, 0, snakeboard_w, snakeboard_h);
   snakeboard_ctx.fillStyle = bg_color;
+  snakeboard_ctx.fillRect(0, 0, snakeboard_w, snakeboard_h);
 
   // Draw score text
   snakeboard_ctx.font = "20px Comic Sans MS";
@@ -33,8 +33,8 @@ function drawBackground() {
 
 function drawSnake() {
   snake_parts.forEach((p) => {
-    snakeboard_ctx.fillRect(p.x, p.y, snake_part_w, snake_part_w);
     snakeboard_ctx.fillStyle = snake_part_color;
+    snakeboard_ctx.fillRect(p.x, p.y, snake_part_w, snake_part_w);
   });
 }
 
